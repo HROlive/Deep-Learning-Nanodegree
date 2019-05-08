@@ -16,7 +16,7 @@ It's the Convolutional Neural Network(CNN) project in the Deep Learning Nanodegr
 
 1. Clone the repository and navigate to the downloaded folder.
 	```	
-		git clone https://github.com/HROlive/Deep-Learning-Nanodegree/project-dog-classification.git
+		git clone https://github.com/HROlive/Deep-Learning-Nanodegree/project_2-dog-classification.git
 		cd project-dog-classification
 	```
 2. Open the `dog_app.ipynb`.
