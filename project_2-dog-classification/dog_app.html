@@ -13136,17 +13136,9 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Convolutional-Neural-Networks">Convolutional Neural Networks<a class="anchor-link" href="#Convolutional-Neural-Networks">&#182;</a></h1><h2 id="Project:-Write-an-Algorithm-for-a-Dog-Identification-App">Project: Write an Algorithm for a Dog Identification App<a class="anchor-link" href="#Project:-Write-an-Algorithm-for-a-Dog-Identification-App">&#182;</a></h2><hr>
-<p>In this notebook, some template code has already been provided for you, and you will need to implement additional functionality to successfully complete this project. You will not need to modify the included code beyond what is requested. Sections that begin with <strong>'(IMPLEMENTATION)'</strong> in the header indicate that the following block of code will require additional functionality which you must provide. Instructions will be provided for each section, and the specifics of the implementation are marked in the code block with a 'TODO' statement. Please be sure to read the instructions carefully!</p>
-<blockquote><p><strong>Note</strong>: Once you have completed all of the code implementations, you need to finalize your work by exporting the Jupyter Notebook as an HTML document. Before exporting the notebook to html, all of the code cells need to have been run so that reviewers can see the final implementation and output. You can then export the notebook by using the menu above and navigating to <strong>File -&gt; Download as -&gt; HTML (.html)</strong>. Include the finished document along with this notebook as your submission.</p>
-</blockquote>
-<p>In addition to implementing code, there will be questions that you must answer which relate to the project and your implementation. Each section where you will answer a question is preceded by a <strong>'Question X'</strong> header. Carefully read each question and provide thorough answers in the following text boxes that begin with <strong>'Answer:'</strong>. Your project submission will be evaluated based on your answers to each of the questions and the implementation you provide.</p>
-<blockquote><p><strong>Note:</strong> Code and Markdown cells can be executed using the <strong>Shift + Enter</strong> keyboard shortcut.  Markdown cells can be edited by double-clicking the cell to enter edit mode.</p>
-</blockquote>
-<p>The rubric contains <em>optional</em> "Stand Out Suggestions" for enhancing the project beyond the minimum requirements. If you decide to pursue the "Stand Out Suggestions", you should include the code in this Jupyter notebook.</p>
-<hr>
-<h3 id="Why-We're-Here">Why We're Here<a class="anchor-link" href="#Why-We're-Here">&#182;</a></h3><p>In this notebook, you will make the first steps towards developing an algorithm that could be used as part of a mobile or web app.  At the end of this project, your code will accept any user-supplied image as input.  If a dog is detected in the image, it will provide an estimate of the dog's breed.  If a human is detected, it will provide an estimate of the dog breed that is most resembling.  The image below displays potential sample output of your finished project (... but we expect that each student's algorithm will behave differently!).</p>
+<h3 id="Why-We're-Here">Why We're Here<a class="anchor-link" href="#Why-We're-Here">&#182;</a></h3><p>In this notebook, you will make the first steps towards developing an algorithm that could be used as part of a mobile or web app.  At the end of this project, your code will accept any user-supplied image as input.  If a dog is detected in the image, it will provide an estimate of the dog's breed.  If a human is detected, it will provide an estimate of the dog breed that is most resembling.  The image below displays potential sample output of your finished project.</p>
 <p><img src="images/sample_dog_output.png" alt="Sample Dog Output"></p>
-<p>In this real-world setting, you will need to piece together a series of models to perform different tasks; for instance, the algorithm that detects humans in an image will be different from the CNN that infers dog breed.  There are many points of possible failure, and no perfect algorithm exists.  Your imperfect solution will nonetheless create a fun user experience!</p>
+<p>In this real-world setting, you will need to piece together a series of models to perform different tasks; for instance, the algorithm that detects humans in an image will be different from the CNN that infers dog breed.  There are many points of possible failure, and no perfect algorithm exists.</p>
 <h3 id="The-Road-Ahead">The Road Ahead<a class="anchor-link" href="#The-Road-Ahead">&#182;</a></h3><p>We break the notebook into separate steps.  Feel free to use the links below to navigate the notebook.</p>
 <ul>
 <li><a href="#step0">Step 0</a>: Import Datasets</li>
@@ -13350,7 +13342,7 @@ There are 8351 total dog images.
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We suggest the face detector from OpenCV as a potential way to detect human images in your algorithm, but you are free to explore other approaches, especially approaches that make use of deep learning :).  Please use the code cell below to design and test your own face detection algorithm.  If you decide to pursue this <em>optional</em> task, report performance on <code>human_files_short</code> and <code>dog_files_short</code>.</p>
+<p>We suggest the face detector from OpenCV as a potential way to detect human images in your algorithm, but you are free to explore other approaches, especially approaches that make use of deep learning :).  Please use the code cell below to design and test your own face detection algorithm.</p>
 
 </div>
 </div>
@@ -13694,25 +13686,10 @@ The dog_detector algorithm detected 92 dogs in dog_files_short with and accuracy
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We suggest VGG-16 as a potential network to detect dog images in your algorithm, but you are free to explore other pre-trained networks (such as <a href="http://pytorch.org/docs/master/torchvision/models.html#inception-v3">Inception-v3</a>, <a href="http://pytorch.org/docs/master/torchvision/models.html#id3">ResNet-50</a>, etc).  Please use the code cell below to test other pre-trained PyTorch models.  If you decide to pursue this <em>optional</em> task, report performance on <code>human_files_short</code> and <code>dog_files_short</code>.</p>
+<p>We suggest VGG-16 as a potential network to detect dog images in your algorithm, but you are free to explore other pre-trained networks (such as <a href="http://pytorch.org/docs/master/torchvision/models.html#inception-v3">Inception-v3</a>, <a href="http://pytorch.org/docs/master/torchvision/models.html#id3">ResNet-50</a>, etc).</p>
 
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">### (Optional) </span>
-<span class="c1">### TODO: Report the performance of another pre-trained network.</span>
-<span class="c1">### Feel free to use as many code cells as needed.</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -13765,7 +13742,6 @@ The dog_detector algorithm detected 92 dogs in dog_files_short with and accuracy
 </tbody>
 </table>
 <p>We also mention that random chance presents an exceptionally low bar: setting aside the fact that the classes are slightly imabalanced, a random guess will provide a correct answer roughly 1 in 133 times, which corresponds to an accuracy of less than 1%.</p>
-<p>Remember that the practice is far ahead of the theory in deep learning.  Experiment with many different architectures, and trust your intuition.  And, of course, have fun!</p>
 <h3 id="(IMPLEMENTATION)-Specify-Data-Loaders-for-the-Dog-Dataset">(IMPLEMENTATION) Specify Data Loaders for the Dog Dataset<a class="anchor-link" href="#(IMPLEMENTATION)-Specify-Data-Loaders-for-the-Dog-Dataset">&#182;</a></h3><p>Use the code cell below to write three separate <a href="http://pytorch.org/docs/stable/data.html#torch.utils.data.DataLoader">data loaders</a> for the training, validation, and test datasets of dog images (located at <code>dog_images/train</code>, <code>dog_images/valid</code>, and <code>dog_images/test</code>, respectively).  You may find <a href="http://pytorch.org/docs/stable/torchvision/datasets.html">this documentation on custom datasets</a> to be a useful resource.  If you are interested in augmenting your training and/or validation data, check out the wide variety of <a href="http://pytorch.org/docs/stable/torchvision/transforms.html?highlight=transform">transforms</a>!</p>
 
 </div>
@@ -13874,7 +13850,6 @@ The dog_detector algorithm detected 92 dogs in dog_files_short with and accuracy
 
 <span class="c1"># define the CNN architecture</span>
 <span class="k">class</span> <span class="nc">Net</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
-    <span class="c1">### TODO: choose an architecture, and complete the class</span>
     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="nb">super</span><span class="p">(</span><span class="n">Net</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
         <span class="c1">## Define layers of a CNN</span>
@@ -13982,10 +13957,10 @@ The dog_detector algorithm detected 92 dogs in dog_files_short with and accuracy
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">torch.optim</span> <span class="k">as</span> <span class="nn">optim</span>
 
-<span class="c1">### TODO: select loss function</span>
+<span class="c1"># loss function</span>
 <span class="n">criterion_scratch</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">CrossEntropyLoss</span><span class="p">()</span>
 
-<span class="c1">### TODO: select optimizer</span>
+<span class="c1"># optimizer</span>
 <span class="n">optimizer_scratch</span> <span class="o">=</span> <span class="n">optim</span><span class="o">.</span><span class="n">SGD</span><span class="p">(</span><span class="n">model_scratch</span><span class="o">.</span><span class="n">parameters</span><span class="p">(),</span> <span class="n">lr</span><span class="o">=</span><span class="mf">0.001</span><span class="p">)</span>
 </pre></div>
 
@@ -14069,7 +14044,7 @@ The dog_detector algorithm detected 92 dogs in dog_files_short with and accuracy
             <span class="n">valid_loss</span>
             <span class="p">))</span>
         
-        <span class="c1">## TODO: save the model if validation loss has decreased</span>
+        <span class="c1"># save the model if validation loss has decreased</span>
         <span class="k">if</span> <span class="n">valid_loss</span> <span class="o">&lt;=</span> <span class="n">valid_loss_min</span><span class="p">:</span>
             <span class="n">torch</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">state_dict</span><span class="p">(),</span> <span class="n">save_path</span><span class="p">)</span>
             <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Successfully updated the saved model | Validation loss decreased from </span><span class="si">{:.6f}</span><span class="s1"> to </span><span class="si">{:.6f}</span><span class="s1">&#39;</span><span class="o">.</span>
@@ -14231,7 +14206,6 @@ Test Accuracy: 14% (123/836)
 <p><a id='step4'></a></p>
 <h2 id="Step-4:-Create-a-CNN-to-Classify-Dog-Breeds-(using-Transfer-Learning)">Step 4: Create a CNN to Classify Dog Breeds (using Transfer Learning)<a class="anchor-link" href="#Step-4:-Create-a-CNN-to-Classify-Dog-Breeds-(using-Transfer-Learning)">&#182;</a></h2><p>You will now use transfer learning to create a CNN that can identify dog breed from images.  Your CNN must attain at least 60% accuracy on the test set.</p>
 <h3 id="(IMPLEMENTATION)-Specify-Data-Loaders-for-the-Dog-Dataset">(IMPLEMENTATION) Specify Data Loaders for the Dog Dataset<a class="anchor-link" href="#(IMPLEMENTATION)-Specify-Data-Loaders-for-the-Dog-Dataset">&#182;</a></h3><p>Use the code cell below to write three separate <a href="http://pytorch.org/docs/master/data.html#torch.utils.data.DataLoader">data loaders</a> for the training, validation, and test datasets of dog images (located at <code>dogImages/train</code>, <code>dogImages/valid</code>, and <code>dogImages/test</code>, respectively).</p>
-<p>If you like, <strong>you are welcome to use the same data loaders from the previous step</strong>, when you created a CNN from scratch.</p>
 
 </div>
 </div>
@@ -14241,7 +14215,7 @@ Test Accuracy: 14% (123/836)
 <div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## TODO: Specify data loaders</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Specify data loaders</span>
 <span class="n">ImageFile</span><span class="o">.</span><span class="n">LOAD_TRUNCATED_IMAGES</span> <span class="o">=</span> <span class="kc">True</span>
 
 <span class="n">size</span> <span class="o">=</span> <span class="mi">224</span>
@@ -14308,7 +14282,7 @@ Test Accuracy: 14% (123/836)
 <span class="kn">import</span> <span class="nn">torch.nn</span> <span class="k">as</span> <span class="nn">nn</span>
 <span class="kn">from</span> <span class="nn">collections</span> <span class="k">import</span> <span class="n">OrderedDict</span>
 
-<span class="c1">## TODO: Specify model architecture </span>
+<span class="c1"># Specify model architecture </span>
 <span class="n">model_transfer</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">resnet152</span><span class="p">(</span><span class="n">pretrained</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
 <span class="c1"># Freeze all pretrained model parameters</span>
@@ -14520,8 +14494,8 @@ Test Accuracy: 86% (719/836)
 <div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">### TODO: Write a function that takes a path to an image as input</span>
-<span class="c1">### and returns the dog breed that is predicted by the model.</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># function that takes a path to an image as input</span>
+<span class="c1"># and returns the dog breed that is predicted by the model</span>
 <span class="kn">from</span> <span class="nn">torch.nn.functional</span> <span class="k">import</span> <span class="n">softmax</span>
 
 <span class="c1"># list of class names by index, i.e. a name can be accessed like class_names[0]</span>
@@ -14587,9 +14561,7 @@ Test Accuracy: 86% (719/836)
 <div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">### TODO: Write your algorithm.</span>
-<span class="c1">### Feel free to use as many code cells as needed.</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">import</span> <span class="nn">cv2</span>
 
 <span class="k">def</span> <span class="nf">run_app</span><span class="p">(</span><span class="n">img_path</span><span class="p">):</span>
@@ -14678,9 +14650,7 @@ Test Accuracy: 86% (719/836)
 <div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## TODO: Execute your algorithm from Step 6 on</span>
-<span class="c1">## at least 6 images on your computer.</span>
-<span class="c1">## Feel free to use as many code cells as needed.</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># test the algorithm</span>
 
 <span class="n">count</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">hstack</span><span class="p">(</span><span class="n">test_files</span><span class="p">):</span>
