@@ -13,7 +13,7 @@ A neural network made on numpy using UCI Machine Learning Dataset - Bike Sharing
 ## Setup
 Clone this repo:
 ```
-git clone https://github.com/HROlive/Deep-Learning-Nanodegree/tree/master/project-bikesharing.git
+git clone https://github.com/HROlive/Deep-Learning-Nanodegree/tree/master/project_1-bikesharing.git
 ```
 Install all the dependencies.
 
