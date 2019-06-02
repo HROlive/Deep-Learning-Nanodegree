@@ -41,7 +41,9 @@ In this project, I used Amazon SageMaker, AWS Lambda and Amazon API Gateway to d
 
 ### Project Overview
 
-![Project Overview][image2]
+<p align="center">
+  <![Project Overview][image2]>
+</p>
 
 ### Libraries
 
