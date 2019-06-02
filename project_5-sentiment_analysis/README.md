@@ -41,9 +41,8 @@ In this project, I used Amazon SageMaker, AWS Lambda and Amazon API Gateway to d
 
 ### Project Overview
 
-<p align="center">
-  <img src="https://github.com/HROlive/Deep-Learning-Nanodegree/project_5-sentiment_analysis/images/project_overview.PNG">
-</p>
+![Project Overview][image2]
+
 ### Libraries
 
 The list below represents main libraries and its objects for the project.
@@ -51,8 +50,6 @@ The list below represents main libraries and its objects for the project.
 - [AWS Lambda](https://aws.amazon.com/lambda)  (Function that has permission to send and recieve data from a SageMaker endpoint)
 - [Amazon API Gateway](https://aws.amazon.com/api-gateway) (Acts as an interface that lets our web app communicate with the Lambda function)
 - [PyTorch](https://pytorch.org) (RNN classifier)
-
-
 
 ### Delete the Endpoint
 Remember to always __SHUT DOWN YOUR ENDPOINT__ if you are no longer using it. You are charged for the length of time that the endpoint is running so if you forget and leave it on you could end up with an unexpectedly large bill.
