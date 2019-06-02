@@ -4,7 +4,7 @@
 
 Become an expert in neural networks, and learn to implement them using the deep learning framework PyTorch. Build convolutional networks for image recognition, recurrent networks for sequence generation, generative adversarial networks for image generation, and learn how to deploy models accessible from a website.
 
-This repository contains the projects that I've developed during this program. [Deep Learning Nanodegree](https://www.udacity.com/course/deep-learning-nanodegree--nd101).
+This repository contains the projects that I've developed during [this program.](https://www.udacity.com/course/deep-learning-nanodegree--nd101).
 
 ## Projects
 
