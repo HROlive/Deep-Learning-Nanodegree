@@ -1,7 +1,7 @@
 [//]: # (Image Reference)
 
 [image1]: ./images/reviews.png "Reviews"
-[image2]: ./Web App Diagram.svg "Project Overview"
+[image2]: ./images/project_overview.png "Project Overview"
 
 # SageMaker Deployment Project
 
