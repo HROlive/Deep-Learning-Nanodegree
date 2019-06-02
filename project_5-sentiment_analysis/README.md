@@ -42,9 +42,8 @@ In this project, I used Amazon SageMaker, AWS Lambda and Amazon API Gateway to d
 ### Project Overview
 
 <p align="center">
-  <![Project Overview][image2]>
+  <img src="https://github.com/HROlive/Deep-Learning-Nanodegree/project_5-sentiment_analysis/images/project_overview.PNG">
 </p>
-
 ### Libraries
 
 The list below represents main libraries and its objects for the project.
