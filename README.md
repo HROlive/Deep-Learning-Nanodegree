@@ -1,10 +1,10 @@
 # [Deep Learning Nanodegree Program](https://www.udacity.com/course/deep-learning-nanodegree--nd101)
 
-# Deep Learning (PyTorch)
+# Program Summary
 
-This repository contains material related to Udacity's [Deep Learning Nanodegree program](https://www.udacity.com/course/deep-learning-nanodegree--nd101). It consists of a bunch of tutorial notebooks for various deep learning topics. In most cases, the notebooks lead you through implementing models such as convolutional networks, recurrent networks, and GANs. There are other topics covered such as weight initialization and batch normalization.
+Become an expert in neural networks, and learn to implement them using the deep learning framework PyTorch. Build convolutional networks for image recognition, recurrent networks for sequence generation, generative adversarial networks for image generation, and learn how to deploy models accessible from a website.
 
-Bellow are the projects that I've developed during this program.
+This repository contains the projects that I've developed during this program. [Deep Learning Nanodegree](https://www.udacity.com/course/deep-learning-nanodegree--nd101).
 
 ## Projects
 
@@ -136,7 +136,7 @@ Noe, assuming your `deep-learning` environment is still activated, you can navig
 
 ```
 cd
-cd *YOUR REPOSITORY*
+cd ***YOUR PROJECT REPOSITORY***
 jupyter notebook
 ```
 
