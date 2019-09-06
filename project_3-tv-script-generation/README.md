@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-In this project, I generated my own [Seinfeld](https://en.wikipedia.org/wiki/Seinfeld) TV scripts using RNNs. I used part of the [Seinfled dataset](https://www.kaggle.com/thec03u5/seinfeld-chronicles#scripts.csv) of scripts from 9 seasons. The Neural Network I generated a new, "fake" TV script, based on patterns it recongnizes in this training data.
+In this project, I trained a recurrent neural network that generates a new ,"fake" TV script, based on patterns it recognizes in the [Seinfled dataset](https://www.kaggle.com/thec03u5/seinfeld-chronicles#scripts.csv) of scripts from 9 seasons.
 
 ## Project Instruction
 
