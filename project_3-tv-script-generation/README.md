@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-In this project, I trained a recurrent neural network that generates a new ,"fake" TV script, based on patterns it recognizes in the [Seinfled dataset](https://www.kaggle.com/thec03u5/seinfeld-chronicles#scripts.csv) of scripts from 9 seasons.
+In this project, I trained a recurrent neural network that generates a new ,"fake" TV script, based on patterns it recognizes in the [Seinfeld dataset](https://www.kaggle.com/thec03u5/seinfeld-chronicles#scripts.csv) of scripts from 9 seasons.
 
 ## Project Instruction
 
